@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 var inquirer = require('inquirer');
 const Palette = require('./Palette');
 const clipboardy = require('clipboardy');
