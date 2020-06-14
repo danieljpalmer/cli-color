@@ -1,0 +1,30 @@
+{
+  "name": "cli-color",
+  "version": "1.0.0",
+  "description": "Generate color palettes in JSON from your CLI, for use with Tailwind CSS or anything you like.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danieljpalmer/cli-color.git"
+  },
+  "keywords": [
+    "colors",
+    "cli",
+    "tailwind",
+    "css",
+    "palettes"
+  ],
+  "author": "Daniel Palmer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danieljpalmer/cli-color/issues"
+  },
+  "homepage": "https://github.com/danieljpalmer/cli-color#readme",
+  "dependencies": {
+    "inquirer": "^7.1.0"
+  }
+}
