@@ -1,6 +1,4 @@
 var inquirer = require('inquirer');
-const generateGrays = require('./methods/generate-grays');
-const generatePalette = require('./methods/generate-palette');
 const Palette = require('./Palette');
 
 inquirer
@@ -43,26 +41,4 @@ inquirer
     const palette = await new Palette({ primary, wantsGrays, wantsUtilities});
     const colors = palette.getColors();
     return console.log(colors);
-    // let palette = {};
-
-    // primaries = await generatePalette(primary);
-
-    // palette = {...primaries};
-    
-    // if (wantsGrays) {
-    //     const grays = await generateGrays(primary);
-    //     palette = {...palette, ...grays};
-    // }
-
-    // if (wantsUtilities) {
-    //     const utilities = {
-    //         success: '',
-    //         error: '',
-    //         warning: ''
-    //     };
-    //     palette = {...palette, ...utilities};
-    // }
-    
-    // return console.log(palette);
-    
-  })
+  });
