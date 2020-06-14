@@ -59,7 +59,8 @@ module.exports = class Palette {
             [hue, 61, 30],
         ];
 
-        return this.primaries = this.generateColorHash({ hsl_array, name: 'primary' });
+        const primaries = this.generateColorHash({ hsl_array, name: 'primary' });
+        return this.primaries = { ...primaries, primary: this.primary };
     }
 
     async generateGrays () {

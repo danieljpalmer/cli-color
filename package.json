@@ -1,6 +1,6 @@
 {
   "name": "@danieljpalmer/cli-color",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Generate color palettes in JSON from your CLI, for use with Tailwind CSS or anything you like.",
   "main": "src/index.js",
   "bin": {
