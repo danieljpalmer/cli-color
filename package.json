@@ -1,8 +1,11 @@
 {
-  "name": "cli-color",
+  "name": "@danieljpalmer/cli-color",
   "version": "1.0.0",
   "description": "Generate color palettes in JSON from your CLI, for use with Tailwind CSS or anything you like.",
   "main": "src/index.js",
+  "bin": {
+      "cli-color": "src/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js"
