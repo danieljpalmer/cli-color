@@ -1,4 +1,4 @@
-# cli-color - generate Tailwind color palettes with npx
+# cli-color - generate tailwind.css color palettes with npx
 Generate color palettes in JSON from your CLI, for use with Tailwind CSS or anything you like.
 
 To use this, just run:
