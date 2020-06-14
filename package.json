@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/danieljpalmer/cli-color#readme",
   "dependencies": {
+    "chalk": "^4.1.0",
     "clipboardy": "^2.3.0",
     "color-convert": "^2.0.1",
     "inquirer": "^7.1.0"

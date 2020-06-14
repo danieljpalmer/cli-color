@@ -1,6 +1,7 @@
 var inquirer = require('inquirer');
 const Palette = require('./Palette');
 const clipboardy = require('clipboardy');
+const chalk = require('chalk');
 
 inquirer
   .prompt([
@@ -41,7 +42,9 @@ inquirer
 
     const palette = await new Palette({ primary, wantsGrays, wantsUtilities});
     const colors = palette.getColors();
+
+    console.log(chalk.inverse.bold("Here's your palette:"));
     clipboardy.writeSync(JSON.stringify(colors));
     console.log(colors);
-    return console.log("We've copied that to your clipboard!")
+    return console.log(chalk.inverse.bold("We've copied that to your clipboard!"));
   });
